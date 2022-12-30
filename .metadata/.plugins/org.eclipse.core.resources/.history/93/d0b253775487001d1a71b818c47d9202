@@ -125,7 +125,7 @@ public class DataStructuresVOne {
 		/*String name = "Thandiwe";
 		StringBuilder sb = new StringBuilder(name);
 		String reversed = sb.reverse().toString();
-		System.out.println(reversed); // prints "ewidnahT" */ 
+		System.out.println(reversed); // prints "ewidnahT" */
 	}
 
 }

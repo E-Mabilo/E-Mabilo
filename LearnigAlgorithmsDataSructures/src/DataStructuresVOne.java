@@ -2,6 +2,7 @@
 import java.awt.Point;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 
 import thisJavaArray.Array;
 
@@ -107,18 +108,18 @@ public class DataStructuresVOne {
 		
 		
 		//To reverse a string in Java
-		String name = "Thandiwe";
+//		String name = "Thandiwe";
 		//Convert the string to a character array using the toCharArray() method.
-		char[] charArray = name.toCharArray();
+//		char[] charArray = name.toCharArray();
 		//create a variable to store the reversed name from the loop
-		String reversed = "";
+//		String reversed = "";
 		//Use a loop to iterate through the array, starting from the last element and ending at the first element.
-		for (int i = charArray.length - 1; i >= 0; i--) {
+//		for (int i = charArray.length - 1; i >= 0; i--) {
 			// code to reverse the string goes here
 			//inside the loop, append each character to a new string using the += operator.
-		    reversed += charArray[i];
-		}
-		System.out.println(reversed); // prints "ewidnahT"
+//		    reversed += charArray[i];
+//		}
+//		System.out.println(reversed); // prints "ewidnahT"
   
 		
 		//Alternatively, you can also use the StringBuilder class to reverse the string.
@@ -126,6 +127,73 @@ public class DataStructuresVOne {
 		StringBuilder sb = new StringBuilder(name);
 		String reversed = sb.reverse().toString();
 		System.out.println(reversed); // prints "ewidnahT" */ 
+		
+		
+		
+		/*Scanner class 
+		 * Allows to take user input from the console 
+		 * Takes the user name and prints "Hello Esther"
+		*/
+//		Scanner userName = new Scanner(System.in);
+//		System.out.println( "Please enter your name ");
+//		String str = userName.nextLine();
+//		System.out.println(str + " is my name" );
+//		
+//		
+		/*Methods 
+		is a block of code.Which only runs if its called 
+		Types of method:
+		*  Build in methods -> these are methods provided by the java run time environment 
+		*  User predefined methods -> Methods built by the users 
+		*/
+		
+		
+		/*Find the total number of size each char appearing inside the array  
+		 * Declare the array 
+		 * create a loop to run through the array 
+		 * create a count to count increment the indexes in an array 
+		 * check if the index value is equals to the 
+		 */
+//		char[] letters = {'A', 'B', 'C', 'D', 'D', 'D'};
+		int count = occur();
+		System.out.println(count);
 	}
+	
+//	public static int countOcurrences(char[] letters, char searchLetter) {
+////		System.out.println(Arrays.toString(letters));
+////		System.out.println(searchLetter);
+//		int count = 0;
+//		for(char letter: letters) {
+//			if (letter == searchLetter) {
+//				count++;
+//			}
+//		
+//		}
+//		return count;
+//	}
+	
+	public static int occur() {
+		
+		int count = 0;
+		Scanner letterComp = new Scanner(System.in);
+		System.out.println("Please enter a char: ");
+		String letterComparing = letterComp.nextLine();
+		
+//		char letterComparing  = 'A';
+		char[] lettersInMainMethod =  {'A', 'B', 'C', 'D', 'D', 'D'};
+		for(char objectLetters : lettersInMainMethod) {
+			if(charAt(letterComparing) == objectLetters) {
+				count++;	
+			}
+		}
+		
+		return count;
+		
+	}
+
+private static char charAt(String letterComparing) {
+	// TODO Auto-generated method stub
+	return 0;
+}
 
 }
